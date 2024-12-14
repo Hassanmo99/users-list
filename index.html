@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- navbar section  -->
+      <div class="main-navbar">
+        <div class="img">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="image-container">
+                <img class="navbar-logo" src="./assets/logo.png" alt="Logo" />
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >الرئيسية</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">الوظائف</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">الشركاء</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">الموهوبين</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">تواصل معنا</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="headline">
+            <p>قائمة</p>
+            <p><span>المتقدمين</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- Cards section  -->
+      <div class="users-cards">
+        <!-- card 1 -->
+        <div class="card" style="width: 18rem; height: 30rem">
+          <div class="first-section">
+            <button class="ellipsis-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </div>
+          </div>
+          <img src="./assets/user.jpeg" class="card-img-top" alt="..." />
+          <div
+            class="card-body d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="card-title">محمود مصطفى</h5>
+            <div class="rejected">
+              <button class="ellipsis-btn">
+                <span class="red-dot"></span>
+              </button>
+              <h6>مرفوض</h6>
+            </div>
+            <p class="card-text">
+              <span>m.youssef@wten.com.sa</span>
+              <i class="fa-regular fa-envelope"></i>
+            </p>
+            <p class="card-text">
+              <span class="mobile">0534444445</span>
+              <i class="fa-solid fa-phone"></i>
+            </p>
+          </div>
+
+          <div class="card-details">
+            <div>
+              <p>الجنسية: <span>سعودي</span></p>
+              <p>محل الإقامة: <span>السعودية</span></p>
+            </div>
+            <div>
+              <p>تاريخ الميلاد: <span>2/2/1997</span></p>
+              <p>المؤهل: <span>بكاليريوس</span></p>
+            </div>
+          </div>
+          <div class="card-footr">
+            <div class="card-btn">
+              <a href="#" class="card-link">السيرة الذاتية</a>
+              <a href="#" class="card-link mb-2" style="margin-right: 30px">
+                الفيديو التعريفي</a
+              >
+              <button
+                class="btn btn-primary mt-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="openModal(
+          'محمود مصطفى', 
+          'm.youssef@wten.com.sa', 
+          '0534444445', 
+          'سعودي', 
+          'السعودية', 
+          '2/2/1997', 
+          'ذكر', 
+          'بكالريوس', 
+          '2020', 
+          '2015', 
+          '150', 
+          'متوسط', 
+          '5000 رس',
+          'متوسط', 
+          'العربية، الانجليزية', 
+          './assets/user.jpeg')"
+              >
+                عرض التفاصيل
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card" style="width: 18rem; height: 30rem">
+          <div class="first-section">
+            <button class="ellipsis-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </div>
+          </div>
+          <img src="./assets/user.jpeg" class="card-img-top" alt="..." />
+          <div
+            class="card-body d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="card-title">محمد احمد</h5>
+            <div class="rejected">
+              <button class="ellipsis-btn">
+                <span class="red-dot" style="background-color: #16d973"></span>
+              </button>
+              <h6 style="color: #16d973">مقبول</h6>
+            </div>
+            <p class="card-text">
+              <span>m.Ahmed@wten.com.sa</span>
+              <i class="fa-regular fa-envelope"></i>
+            </p>
+            <p class="card-text">
+              <span class="mobile">0506544445</span>
+              <i class="fa-solid fa-phone"></i>
+            </p>
+          </div>
+
+          <div class="card-details">
+            <div>
+              <p>الجنسية: <span>سعودي</span></p>
+              <p>محل الإقامة: <span>السعودية</span></p>
+            </div>
+            <div>
+              <p>تاريخ الميلاد: <span>2/2/1997</span></p>
+              <p>المؤهل: <span>بكاليريوس</span></p>
+            </div>
+          </div>
+          <div class="card-footr">
+            <div class="card-btn">
+              <a href="#" class="card-link">السيرة الذاتية</a>
+              <a href="#" class="card-link mb-2" style="margin-right: 30px">
+                الفيديو التعريفي</a
+              >
+              <button
+                class="btn btn-primary mt-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="openModal(
+          'محمد احمد', 
+          'm.Ahmed@wten.com.sa', 
+          '0534444445', 
+          'سعودي', 
+          'السعودية', 
+          '2/2/1997', 
+          'ذكر', 
+          'بكالريوس', 
+          '2020', 
+          '2015', 
+          '150', 
+          'متوسط', 
+          '10000 رس', 
+          'متوسط',  
+          'العربية، الانجليزية', 
+          './assets/user.jpeg')"
+              >
+                عرض التفاصيل
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card" style="width: 18rem; height: 30rem">
+          <div class="first-section">
+            <button class="ellipsis-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </div>
+          </div>
+          <img src="./assets/user2.jpeg" id="img2" class="card-img-top" alt="..." />
+          <div
+            class="card-body d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="card-title">عبدالله محمد</h5>
+            <div class="rejected">
+              <button class="ellipsis-btn">
+                <span class="red-dot"></span>
+              </button>
+              <h6>مرفوض</h6>
+            </div>
+            <p class="card-text">
+              <span>m.youssef@wten.com.sa</span>
+              <i class="fa-regular fa-envelope"></i>
+            </p>
+            <p class="card-text">
+              <span class="mobile">0534444445</span>
+              <i class="fa-solid fa-phone"></i>
+            </p>
+          </div>
+
+          <div class="card-details">
+            <div>
+              <p>الجنسية: <span>سعودي</span></p>
+              <p>محل الإقامة: <span>السعودية</span></p>
+            </div>
+            <div>
+              <p>تاريخ الميلاد: <span>2/2/1997</span></p>
+              <p>المؤهل: <span>بكاليريوس</span></p>
+            </div>
+          </div>
+          <div class="card-footr">
+            <div class="card-btn">
+              <a href="#" class="card-link">السيرة الذاتية</a>
+              <a href="#" class="card-link mb-2" style="margin-right: 30px">
+                الفيديو التعريفي</a
+              >
+              <button
+                class="btn btn-primary mt-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="openModal(
+          'عبدالله محمد', 
+          'm.youssef@wten.com.sa', 
+          '0534444445', 
+          'سعودي', 
+          'السعودية', 
+          '2/2/1997', 
+          'ذكر', 
+          'بكالريوس', 
+          '2020', 
+          '2015', 
+          '200', 
+          'متوسط', 
+          '7000 رس', 
+          'متوسط', 
+           'العربية، الفرنسية', 
+          './assets/user2.jpeg')"
+              >
+                عرض التفاصيل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="card" style="width: 18rem; height: 30rem">
+          <div class="first-section">
+            <button class="ellipsis-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </div>
+          </div>
+          <img src="./assets/user3.jpeg" class="card-img-top" alt="..." />
+          <div
+            class="card-body d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="card-title">حسن مرسي</h5>
+            <div class="rejected">
+              <button class="ellipsis-btn">
+                <span class="red-dot" style="background-color: #16d973"></span>
+              </button>
+              <h6 style="color: #16d973">مقبول</h6>
+            </div>
+            <p class="card-text">
+              <span>H.Morsi@wten.com.sa</span>
+              <i class="fa-regular fa-envelope"></i>
+            </p>
+            <p class="card-text">
+              <span class="mobile">0534444445</span>
+              <i class="fa-solid fa-phone"></i>
+            </p>
+          </div>
+
+          <div class="card-details">
+            <div>
+              <p>الجنسية: <span>سعودي</span></p>
+              <p>محل الإقامة: <span>السعودية</span></p>
+            </div>
+            <div>
+              <p>تاريخ الميلاد: <span>2/2/1997</span></p>
+              <p>المؤهل: <span>بكاليريوس</span></p>
+            </div>
+          </div>
+          <div class="card-footr">
+            <div class="card-btn">
+              <a href="#" class="card-link">السيرة الذاتية</a>
+              <a href="#" class="card-link mb-2" style="margin-right: 30px">
+                الفيديو التعريفي</a
+              >
+              <button
+                class="btn btn-primary mt-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="openModal(
+          'حسن مرسي', 
+          'H.Morsi@wten.com.sa', 
+          '0534444445', 
+          'سعودي', 
+          'السعودية', 
+          '2/2/1997', 
+          'ذكر', 
+          'بكالريوس', 
+          '2020', 
+          '2015', 
+          '150', 
+          'متوسط', 
+          '12000 رس', 
+          'متوسط', 
+           'العربية، الانجليزية', 
+          './assets/user3.jpeg')"
+              >
+                عرض التفاصيل
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card" style="width: 18rem; height: 30rem">
+          <div class="first-section">
+            <button class="ellipsis-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </div>
+          </div>
+          <img src="./assets/user.jpeg" class="card-img-top" alt="..." />
+          <div
+            class="card-body d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="card-title">محمود مصطفى</h5>
+            <div class="rejected">
+              <button class="ellipsis-btn">
+                <span class="red-dot"></span>
+              </button>
+              <h6>مرفوض</h6>
+            </div>
+            <p class="card-text">
+              <span>m.youssef@wten.com.sa</span>
+              <i class="fa-regular fa-envelope"></i>
+            </p>
+            <p class="card-text">
+              <span class="mobile">0534444445</span>
+              <i class="fa-solid fa-phone"></i>
+            </p>
+          </div>
+
+          <div class="card-details">
+            <div>
+              <p>الجنسية: <span>سعودي</span></p>
+              <p>محل الإقامة: <span>السعودية</span></p>
+            </div>
+            <div>
+              <p>تاريخ الميلاد: <span>2/2/1997</span></p>
+              <p>المؤهل: <span>بكاليريوس</span></p>
+            </div>
+          </div>
+          <div class="card-footr">
+            <div class="card-btn">
+              <a href="#" class="card-link">السيرة الذاتية</a>
+              <a href="#" class="card-link mb-2" style="margin-right: 30px">
+                الفيديو التعريفي</a
+              >
+              <button
+                class="btn btn-primary mt-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="openModal(
+          'محمود مصطفى', 
+          'm.youssef@wten.com.sa', 
+          '0534444445', 
+          'سعودي', 
+          'السعودية', 
+          '2/2/1997', 
+          'ذكر', 
+          'بكالريوس', 
+          '2020', 
+          '2015', 
+          '150', 
+          'متوسط', 
+          '2000 رس', 
+          'متوسط', 
+           'العربية', 
+          './assets/user.jpeg')"
+              >
+                عرض التفاصيل
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card" style="width: 18rem; height: 30rem">
+          <div class="first-section">
+            <button class="ellipsis-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </div>
+          </div>
+          <img src="./assets/user2.jpeg" id="img2" class="card-img-top" alt="..." />
+          <div
+            class="card-body d-flex flex-column justify-content-center align-items-center"
+          >
+            <h5 class="card-title">مالك عبدالله</h5>
+            <div class="rejected">
+              <button class="ellipsis-btn">
+                <span class="red-dot"></span>
+              </button>
+              <h6>مرفوض</h6>
+            </div>
+            <p class="card-text">
+              <span>m.youssef@wten.com.sa</span>
+              <i class="fa-regular fa-envelope"></i>
+            </p>
+            <p class="card-text">
+              <span class="mobile">0534444445</span>
+              <i class="fa-solid fa-phone"></i>
+            </p>
+          </div>
+
+          <div class="card-details">
+            <div>
+              <p>الجنسية: <span>سعودي</span></p>
+              <p>محل الإقامة: <span>السعودية</span></p>
+            </div>
+            <div>
+              <p>تاريخ الميلاد: <span>2/2/1997</span></p>
+              <p>المؤهل: <span>بكاليريوس</span></p>
+            </div>
+          </div>
+          <div class="card-footr">
+            <div class="card-btn">
+              <a href="#" class="card-link">السيرة الذاتية</a>
+              <a href="#" class="card-link mb-2" style="margin-right: 30px">
+                الفيديو التعريفي</a
+              >
+              <button
+                class="btn btn-primary mt-1"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                onclick="openModal(
+          'مالك عبدالله', 
+          'm.youssef@wten.com.sa', 
+          '0534444445', 
+          'سعودي', 
+          'السعودية', 
+          '2/2/1997', 
+          'ذكر', 
+          'بكالريوس', 
+          '2020', 
+          '2015', 
+          '150', 
+          'متوسط', 
+          '10000 رس', 
+          'متوسط', 
+          'العربية، الانجليزية', 
+          './assets/user2.jpeg'
+          )"
+              >
+                عرض التفاصيل
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="height: 92vh">
+          <div class="modal-content h-100">
+            <div class="card modal-card h-100 w-100">
+              <div class="form-check w-100 d-flex justify-content-between pt-3">
+                <button
+                  type="button"
+                  style="position: relative; right: 50px"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+
+                <img
+                  id="modalImage"
+                  src="./assets/user.jpeg"
+                  class="card-img-top"
+                  style="position: relative; right: -10px"
+                  alt="..."
+                />
+                <div></div>
+              </div>
+              <div
+                class="cb d-flex flex-column justify-content-between align-items-center pt-2"
+              >
+                <h5 class="card-title" id="modalName">محمود مصطفى</h5>
+                <div
+                  class="card-info justify-content-center align-items-center"
+                >
+                  <p class="card-text">
+                    <span id="modalEmail">m.youssef@wten.com.sa</span>
+                    <i class="fa-regular fa-envelope"></i>
+                  </p>
+
+                  <p
+                    class="card-text mb-5 mr-5"
+                    style="position: relative; right: 40px"
+                  >
+                    <span class="mobile" id="modalPhone">0534444445</span>
+                    <i class="fa-solid fa-phone"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-details" style="font-size: medium">
+                <div>
+                  <p>الجنسية: <span id="modalNationality">سعودي</span></p>
+                  <p>محل الإقامة: <span id="modalResidence">السعودية</span></p>
+                </div>
+                <div>
+                  <p>
+                    تاريخ الميلاد: <span id="modalBirthDate">2/2/1997</span>
+                  </p>
+                  <p>الجنس: <span id="modalGender">ذكر</span></p>
+                </div>
+              </div>
+              <div class="card-details" style="font-size: medium">
+                <div>
+                  <p>المؤهل: <span id="modalDegree">بكالريوس</span></p>
+                  <p>تاريخ الإنتهاء: <span id="modalEndDate">2020</span></p>
+                </div>
+                <div>
+                  <p>تاريخ الإبتداء: <span id="modalStartDate">2015</span></p>
+                  <p>الدرجة: <span id="modalScore">150</span></p>
+                </div>
+              </div>
+
+              <div class="card-details" style="font-size: medium">
+                <div>
+                  <p>
+                    مستوى الخبرة: <span id="modalExperienceLevel">متوسط</span>
+                  </p>
+                  <p>الراتب المتوقع: <span id="modalSalary">5000 رس</span></p>
+                </div>
+                <div>
+                  <p>مهارات ال It: <span id="modalITSkills">متوسط</span></p>
+                  <p>
+                    اللغات :
+                    <span id="modalLanguages">العربية، الانجليزية</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-btn" style="position: relative; top: -25px">
+                <a href="#" class="card-link">السيرة الذاتية</a>
+                <a
+                  href="#"
+                  class="card-link"
+                  style="position: relative; right: 13px"
+                  >الفيديو التعريفي</a
+                >
+                <div
+                  class="two-btns d-flex align-items-center justify-content-between gap-2 pt-2 w-100"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-100"
+                    data-bs-dismiss="modal"
+                  >
+                    قبول المتقدم
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary w-100"
+                    data-bs-dismiss="modal"
+                  >
+                    رفض المتقدم
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>
